@@ -2,6 +2,7 @@
   "name": "first_react_app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://Rishikeshrajak.github.io/Video-Streaming-in-React-Redux",
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
     "react": "^16.7.0",
@@ -16,7 +17,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -28,6 +31,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "redux-devtools": "^3.5.0"
   }
 }
